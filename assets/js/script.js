@@ -210,7 +210,7 @@ var dropZoneDragHandler = function(event) {
     var taskListEl = event.target.closest(".task-list");
     if (taskListEl) {
         event.preventDefault();
-        taskListEl.setAttribute("style", "background: rgba(68, 233, 255, 0.7); border-style: dashed;");
+        taskListEl.setAttribute("style", "background: rgba(255, 255, 255, .2); border-style: dashed;");
     }
 }
 

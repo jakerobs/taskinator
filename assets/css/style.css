@@ -3,16 +3,16 @@
 }
 
 :root {
-  --primary: #44e9ff;
-  --secondary: #497980;
-  --tertiary: rgb(192, 246, 253);
-  --grey: #333;
+  --primary: #ffffff;
+  --secondary: linear-gradient( 180deg, #15f4da 10%, #1D6FA3 100%);
+  --tertiary:  linear-gradient(180deg, #1d6fa3 40%, #30548a 70%, #15203d 100%);  
+  --turqoise: #15f4da;
   font-size: 62.5%;
 }
 
 body {
-  background: #ededed;
-  color: var(--grey);
+  background: var(--tertiary);
+  color: var(--primary);
   margin: 0;
   padding: 0;
   display: flex;
@@ -28,7 +28,7 @@ header {
 }
 
 header p {
-  color: var(--tertiary);
+  color: var(--primary);
   margin: 5px 0 20px;
   font-size: 2rem;
 }
@@ -44,13 +44,19 @@ form {
   flex-wrap: wrap;
 }
 
+::placeholder {
+  color: var(--primary);
+}
+
 form input {
+  color: var(--primary);
+  background: transparent;
   outline: none;
   border: none;
   padding: 12px;
   width: 100%;
   font-size: 2.2rem;
-  border: 2px solid var(--grey);
+  border: 3px solid var(--primary);
   border-radius: 12px;
 }
 
@@ -61,8 +67,8 @@ form .form-group {
 
 footer {
   width: 100%;
-  background: var(--secondary);
-  color: var(--tertiary);
+  background: #15203d;
+  color: var(--primary);
   font-size: 2.4rem;
   padding: 20px;
   border-top: 5px solid var(--primary);
@@ -98,16 +104,16 @@ footer {
   list-style: none;
   padding: 15px;
   height: calc(100% - 50px);
-  background: rgb(196, 196, 196);
+  background: transparent;
   border-radius: 12px;
-  border: 2px solid var(--grey);
+  border: 3px solid var(--primary);
 }
 
 .task-item {
-  color: var(--grey);
+  color: var(--primary);
   padding: 15px 15px;
-  border: 2px solid var(--grey);
-  background: var(--tertiary);
+  border: 2px solid var(--primary);
+  background: rgba(255, 255, 255, .1);
   border-radius: 12px;
   margin-bottom: 20px;
 }
@@ -135,21 +141,24 @@ footer {
 }
 
 .btn {
+  color: var(--primary);
   outline: none;
   border: none;
   display: inline-block;
-  padding: 10px 15px;
-  background: var(--primary);
+  padding: 11px 15px;
+  background: transparent;
   font-size: 2.2rem;
   border-radius: 12px;
   position: relative;
-  top: -3px;
+  margin-top: -3px;
+  border: 3px solid var(--primary);
   box-shadow: 0 3px var(--grey);
 }
 
 .btn:hover {
   box-shadow: 0 2px var(--grey);
   top: -2px;
+  background-color: rgba(255, 255, 255, .2);
 }
 .btn:active {
   box-shadow: 0 0px var(--grey);
@@ -161,25 +170,23 @@ footer {
   font-size: 1.4rem;
   padding: 5px 7px;
   margin: 3px;
-  background: var(--secondary);
-  color: #fff;
+  color: var(--primary);
 }
 
 .select-dropdown,
 .select-status {
   display: block;
   font-size: 2.2rem;
-  color: #444;
+  color: var(--primary);
   padding: 12px;
   width: 100%;
   max-width: 100%;
-  margin: 0;
-  border: 2px solid var(--grey);
+  border: 3px solid var(--primary);
   border-radius: 12px;
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
-  background-color: #fff;
+  background: transparent;
   background-image: url("../images/select-arrow.svg");
   background-repeat: no-repeat, repeat;
   background-position: right 0.7em top 50%, 0 0;
@@ -188,7 +195,7 @@ footer {
 
 .select-status {
   font-size: 1.4rem;
-  padding: 4px 28px 4px 4px;
+  padding: 6px 28px 6px 4px;
   width: auto;
 }
 
@@ -199,15 +206,14 @@ footer {
 
 .select-dropdown:hover,
 .select-status:hover {
-  border-color: #888;
+  background-color: rgba(255, 255, 255, .2);
 }
 
 .select-dropdown:focus,
 .select-status:focus {
-  border-color: #aaa;
   box-shadow: 0 0 1px 3px rgba(59, 153, 252, 0.7);
   box-shadow: 0 0 0 3px -moz-mac-focusring;
-  color: #222;
+  color: #ffffff;
   outline: none;
 }
 .select-dropdown option,
@@ -230,3 +236,9 @@ footer {
   }
 
 }
+
+/* 
+background-color: #1d6fa3;
+background-image: linear-gradient(180deg, #1d6fa3 0%, #25cca6 50%, #1d6fa3 99%);
+
+background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%); */
