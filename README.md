@@ -1,15 +1,15 @@
-## Taskinator - A Simple Task-List Web App
+# Taskinator - A Simple Task-List Web App
 
-# Description
+## Description
 This application will allow the user to create a personalized to do list.
 
-# Installation
+## Installation
 https://jakerobs.github.io/taskinator/
 
-# Usage
+## Usage
 
 
-# Instructions
+## Instructions
 * Fill the out the form at the top.
 * Click Add Task.
 * Drag and drop task into the each column as it's status changes.
