@@ -14,3 +14,6 @@ https://jakerobs.github.io/taskinator/
 * Click Add Task.
 * Drag and drop task into the each column as it's status changes.
 * Edit or delete existing tasks as necessary. 
+
+## Future Development
+* Edit Task Type
